@@ -14,30 +14,31 @@
 ## Usage
 
 ```js
-import getMdTitle from 'get-md-title';
+import getTitle from 'get-md-title';
 
-getMdTitle('unicorns'); // unicorns
+const input = `
+# awesome *heading*
+
+# second heading
+
+paragragh
+`.trim();
+
+getTitle(input).text // awesome heading
+getTitle(input).html // awesome <em>heading</em>
+getTitle(input).node // AST node, see commonmark API
 ```
 
 ## API
 
-### getMdTitle(input, [options])
+### getTitle(input)
 
 #### input
 
 *Required*  
 Type: `String`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `Boolean`  
-Default: `false`
-
-Lorem ipsum.
+Markdown string.
 
 ## License
 
