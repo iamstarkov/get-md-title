@@ -1,0 +1,40 @@
+{
+  "name": "get-md-title",
+  "version": "0.0.0",
+  "description": "get title from markdown article",
+  "main": "index.es5.js",
+  "scripts": {
+    "coverage": "istanbul cover _mocha index.js -- --require babel/register",
+    "precoveralls": "npm run coverage",
+    "coveralls": "coveralls < coverage/lcov.info",
+    "test": "mocha --require babel/register",
+    "tdd": "npm test -- --watch",
+    "transpile": "babel index.js > index.es5.js",
+    "prepublish": "npm run transpile",
+    "postpublish": "rm *.es5.js && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamstarkov/get-md-title.git"
+  },
+  "keywords": [
+    "md",
+    "markdown",
+    "commonmark",
+    "article",
+    "title"
+  ],
+  "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamstarkov/get-md-title/issues"
+  },
+  "homepage": "https://github.com/iamstarkov/get-md-title#readme",
+  "devDependencies": {
+    "babel": "*",
+    "coveralls": "*",
+    "assert": "*",
+    "istanbul": "*",
+    "mocha": "*"
+  }
+}
