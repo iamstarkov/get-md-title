@@ -5,8 +5,10 @@ import trimTag from 'trim-html-tag';
 const isTitle = node => isHeader(node) && isLevel(node, 1);
 const matchTitle = partialRight(match, isTitle);
 
-export default input => ({
-  text: text(matchTitle(input)),
-  html: trimTag('h1', html(matchTitle(input))),
-  node: matchTitle(input)
-});
+const result = node => ({
+  text: text(node),
+  html: trimTag('h1', html(node)),
+  node
+})
+
+export default input => result(matchTitle(input));
