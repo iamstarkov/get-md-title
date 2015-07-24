@@ -9,6 +9,6 @@ const result = node => ({
   text: text(node),
   html: trimTag('h1', html(node)),
   node
-})
+});
 
 export default input => result(matchTitle(input));
