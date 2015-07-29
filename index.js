@@ -7,7 +7,7 @@ const matchTitle = partialRight(match, isTitle);
 
 const result = node => ({
   text: text(node),
-  html: trimTag('h1', html(node)),
+  html: trimTag(html(node)),
   node
 });
 
