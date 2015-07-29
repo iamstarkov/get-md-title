@@ -44,6 +44,7 @@ Markdown string.
 
 MIT © [Vladimir Starkov](https://iamstarkov.com)
 
+
 [npm-url]: https://npmjs.org/package/get-md-title
 [npm-image]: https://img.shields.io/npm/v/get-md-title.svg?style=flat-square
 
