@@ -1,6 +1,6 @@
 {
   "name": "get-md-title",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "get title from markdown article",
   "main": "index.es5.js",
   "scripts": {
