@@ -1,14 +1,14 @@
 import { isHeader, isLevel, match, text, html } from 'commonmark-helpers';
-import { partialRight } from 'ramda';
 import trimTag from 'trim-html-tag';
 
 const isTitle = node => isHeader(node) && isLevel(node, 1);
-const matchTitle = partialRight(match, isTitle);
 
-const result = node => ({
-  text: text(node),
-  html: trimTag(html(node)),
-  node
-});
-
-export default input => result(matchTitle(input));
+export default function getTitle(input) {
+  const node = match(input, isTitle);
+  if (!node) return;
+  return {
+    text: text(node),
+    html: trimTag(html(node)),
+    node
+  };
+};

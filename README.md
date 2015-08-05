@@ -24,9 +24,10 @@ const input = `
 paragragh
 `.trim();
 
-getTitle(input).text // awesome heading
-getTitle(input).html // awesome <em>heading</em>
-getTitle(input).node // AST node, see commonmark API
+getTitle(input).text; // awesome heading
+getTitle(input).html; // awesome <em>heading</em>
+getTitle(input).node; // AST node, see commonmark API
+getTitle('');         // undefined ¯\_(ツ)_/¯
 ```
 
 ## API

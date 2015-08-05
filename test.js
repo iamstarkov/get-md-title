@@ -16,3 +16,7 @@ it('should getTitle text', () => {
 it('should getTitle html', () => {
   equal(getTitle(input).html, 'awesome <em>heading</em>');
 });
+
+it('should get undefined if title not found', () => {
+  equal(getTitle(''), undefined);
+});
