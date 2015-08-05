@@ -3,7 +3,7 @@ import trimTag from 'trim-html-tag';
 
 const isTitle = node => isHeader(node) && isLevel(node, 1);
 
-export default function getTitle(input) {
+export default input => {
   const node = match(input, isTitle);
   if (!node) return;
   return {
