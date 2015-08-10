@@ -6,8 +6,7 @@ const input = `
 
 # second heading
 
-paragragh
-`.trim();
+paragragh`;
 
 it('should getTitle text', () => {
   equal(getTitle(input).text, 'awesome heading');

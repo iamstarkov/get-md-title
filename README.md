@@ -21,12 +21,11 @@ const input = `
 
 # second heading
 
-paragragh
-`.trim();
+paragragh`;
 
 getTitle(input).text; // awesome heading
 getTitle(input).html; // awesome <em>heading</em>
-getTitle(input).node; // AST node, see commonmark API
+getTitle('# title \n ').node; // AST node, see commonmark API
 getTitle('');         // undefined ¯\_(ツ)_/¯
 ```
 
