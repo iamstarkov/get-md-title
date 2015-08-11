@@ -25,7 +25,7 @@ paragragh`;
 
 getTitle(input).text; // awesome heading
 getTitle(input).html; // awesome <em>heading</em>
-getTitle('# title \n ').node; // AST node, see commonmark API
+getTitle(input).node; // AST node, see commonmark API
 getTitle('');         // undefined ¯\_(ツ)_/¯
 ```
 
