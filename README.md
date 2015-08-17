@@ -42,6 +42,7 @@ Markdown string.
 
 ## Related
 
+* [article-data][article-data] - extract data from your markdown article
 * [get-md-content][get-md-content] - get content from markdown article
 * [get-md-date][get-md-date] - get date from markdown article
 * [get-md-desc][get-md-desc] - get description from markdown article
@@ -64,6 +65,7 @@ MIT © [Vladimir Starkov](https://iamstarkov.com)
 [depstat-url]: https://david-dm.org/iamstarkov/get-md-title
 [depstat-image]: https://david-dm.org/iamstarkov/get-md-title.svg?style=flat-square
 
+[article-data]: https://github.com/iamstarkov/article-data
 [get-md-content]: https://github.com/iamstarkov/get-md-content
 [get-md-date]: https://github.com/iamstarkov/get-md-date
 [get-md-desc]: https://github.com/iamstarkov/get-md-desc
