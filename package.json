@@ -35,7 +35,7 @@
     "coveralls": "*",
     "assert": "*",
     "isparta": "*",
-    "mocha": "*"
+    "mocha": ">=3.5.0"
   },
   "dependencies": {
     "commonmark-helpers": "^0.4.0",
