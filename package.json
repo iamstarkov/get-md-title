@@ -32,7 +32,7 @@
   "homepage": "https://github.com/iamstarkov/get-md-title#readme",
   "devDependencies": {
     "babel": "*",
-    "coveralls": "*",
+    "coveralls": ">=2.13.3",
     "assert": "*",
     "isparta": "*",
     "mocha": "*"
